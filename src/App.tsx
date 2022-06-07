@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Main from "./components/layouts/Main";
+import LeftSideBar from "./components/layouts/LeftSideBar";
+import RightSideBar from "./components/layouts/RightSideBar";
+import { useState } from "react";
 
 function App() {
+
+  const [isModalList, setIsModalList] = useState<boolean>(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LeftSideBar/>
+      <Main isModalList={isModalList} setIsModalList={setIsModalList}/>
+      <RightSideBar isModalList={isModalList} setIsModalList={setIsModalList}/>
     </div>
   );
 }
