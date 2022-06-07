@@ -1,11 +1,10 @@
-import React from 'react'
-import Whatsapp from '../svg/Whatsapp'
+import icowhatsapp from './../../img/icowhatsapp.png'
 
 const UserCard = ({userName, teamTag}:any) => {
   return (
     <div className='card_user_container'>
         <div className='card_user_socialNetwork'>
-          <Whatsapp/>
+          <div><img src={icowhatsapp}/></div>
           <small>Whatsapp</small>
         </div>
         <div className='card_user_name'>

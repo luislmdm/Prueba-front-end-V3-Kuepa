@@ -623,11 +623,12 @@ body .App {
   padding-right: 5px;
 }
 
-.rightsidebar_container .rightsidebar_overflow ul .card_user_container .card_user_socialNetwork svg {
+.rightsidebar_container .rightsidebar_overflow ul .card_user_container .card_user_socialNetwork img {
   position: absolute;
-  -webkit-transform: translateX(-35px) translateY(-3px);
-          transform: translateX(-35px) translateY(-3px);
+  -webkit-transform: translateX(-38px) translateY(-3px);
+          transform: translateX(-38px) translateY(-3px);
   z-index: 1;
+  height: 13px;
 }
 
 .rightsidebar_container .rightsidebar_overflow ul .card_user_container .card_user_name {
@@ -851,6 +852,7 @@ body .App {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    visibility: hidden;
   }
   .leftsidebar_container .userICO_Container .userImg {
     visibility: hidden;
@@ -890,6 +892,6 @@ body .App {
 }
 
 .hidden {
-  visibility: hidden;
+  visibility: collapse;
 }
 /*# sourceMappingURL=index.css.map */

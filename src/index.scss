@@ -473,10 +473,12 @@ body{
                     background-color: #87849E;
                     height: 13px;
                     padding-right: 5px;
-                    svg{
+                    img{
                         position: absolute;
-                        transform: translateX(-35px) translateY(-3px);
-                        z-index: 1;
+                        transform: translateX(-38px) translateY(-3px);
+                        z-index: 1;   
+                        height: 13px;     
+                                        
                     }
                 }
                 .card_user_name{
@@ -679,6 +681,8 @@ body{
         flex-direction: row;
         width: 50%!important;
         justify-content: flex-end;
+        visibility: hidden;
+
         .userImg{
             visibility: hidden;
         }    
@@ -717,7 +721,7 @@ body{
 }
 
 .hidden{
-    visibility: hidden;
+    visibility: collapse;
 
 }
 
